@@ -8,6 +8,12 @@ def login():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
+
+        # Loglara yaz
+        print("=== YENİ GİRİŞ ===")
+        print("Kullanıcı Adı:", username, flush=True)
+        print("Şifre:", password, flush=True)
+
         return render_template("login.html", username=username, password=password)
     return render_template("login.html", username=None, password=None)
 
