@@ -1,10 +1,11 @@
 from flask import Flask, render_template
+import os  # ← Bunu eklemeyi unutma
+
 app = Flask(__name__)
 
 @app.route("/")
 def login():
     return render_template("login.html")
-
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
